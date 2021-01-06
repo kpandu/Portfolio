@@ -1,0 +1,41 @@
+.education-bg {
+  background-color: #313131;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.education-left {
+  background: #ffffff;
+  color: #464646;
+  width: 100%;
+}
+
+.education-right {
+  background: #0e0e0e;
+  color: #fafafa;
+  width: 100%;
+}
+
+.education-right p:nth-child(1),
+.education-left p:nth-child(1) {
+  font-weight: 600;
+}
+
+.education-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 237.5%;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.education-card-container {
+  height: 100%;
+}

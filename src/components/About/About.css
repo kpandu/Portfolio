@@ -1,0 +1,13 @@
+.portrait {
+  width: 325px;
+  height: 325px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: inset 0px 4px 4px 228px rgba(122, 47, 124, 0.45);
+  filter: grayscale(80%);
+  transition: 0.3s;
+}
+
+.portrait:hover {
+  filter: grayscale(0%);
+}

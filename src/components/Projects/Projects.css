@@ -1,0 +1,189 @@
+.projects-container {
+  width: 100vw !important;
+}
+
+.project-header {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 72px;
+  margin: 0;
+}
+
+.project-body {
+  font-size: 14px;
+  line-height: 27px;
+  text-align: justify;
+  max-width: 600px;
+  padding-bottom: 50px;
+}
+
+.project-container video:focus {
+  outline: none;
+}
+.project-container {
+  margin-bottom: 0px;
+}
+
+.project-mini-text {
+  max-width: 600px;
+}
+
+.project-left {
+  max-height: 55vh;
+}
+
+.project-right {
+  max-height: 55vh;
+}
+
+.project-center {
+  width: 100%;
+}
+
+.project-site {
+  /* max-width: 400px;
+  max-height: 400px; */
+  width: 100%;
+  margin: auto;
+}
+
+.project-large-video {
+  width: 100%;
+  border-radius: 10px;
+}
+.project-large-video:focus,
+.project-phone-1:focus,
+.project-phone-2:focus {
+  outline: none;
+}
+
+.project-panorama {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 40px;
+  border: 18px solid black;
+  box-shadow: 0 2px 5px rgba(24, 17, 17, 0.15), 0 4px 2px rgba(0, 0, 0, 0.15),
+    0 8px 4px rgba(0, 0, 0, 0.15), 0 16px 8px rgba(0, 0, 0, 0.15),
+    0 32px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-carve {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 40px;
+  border: 18px solid rgb(75, 75, 75);
+  box-shadow: 0 2px 5px rgba(24, 17, 17, 0.15), 0 4px 2px rgba(0, 0, 0, 0.15),
+    0 8px 4px rgba(0, 0, 0, 0.15), 0 16px 8px rgba(0, 0, 0, 0.15),
+    0 32px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-rounded-img {
+  border-radius: 10px;
+}
+
+.project-crystal-img {
+  width: 100%;
+}
+
+.project-r3-c1 {
+  background-color: #f3f3f3;
+  height: 100%;
+  width: 100%;
+}
+
+.project-r3-c2 {
+  background-color: #767676;
+  height: 100%;
+  width: 100%;
+}
+
+.project-r4-c1 {
+  background-color: #1e1e1e;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.project-r4-c2 {
+  background-color: #020202;
+  height: 100%;
+  width: 100%;
+  padding: 2vw;
+}
+
+.project-r5-c1 {
+  overflow: hidden;
+  height: 100%;
+  width: 50vw;
+  max-height: 700px;
+  height: 50vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/panorama-left.png");
+}
+
+.project-r5-c2 {
+  overflow: hidden;
+  height: 100%;
+  width: 50vw;
+  height: 50vw;
+  max-height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/panorama-right.png");
+}
+
+.project-r5-c3 {
+  background-color: #e5e5e5;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh !important;
+}
+
+.project-r6-c1 {
+  background-color: #eeeeee;
+  height: 100%;
+  width: 100%;
+  padding: 2vw;
+  color: black;
+}
+
+.project-r6-c2 {
+  background-color: #222222;
+  height: 100%;
+  width: 100%;
+}
+
+.project-r7-c1-1 {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+.project-r7-c1-2 {
+  background-color: rgb(240, 240, 240);
+  color: black;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.project-r7-c2 {
+  background-color: #8a8a8a;
+  height: 100%;
+  width: 100%;
+}
+
+.project-r9-c1 {
+  background-color: #1e1e1e;
+  min-height: 100vh !important;
+  height: 100%;
+  width: 100%;
+}
+
+.project-r9-c2 {
+  background-color: #070707;
+  height: 100%;
+  width: 100%;
+  color: white;
+}

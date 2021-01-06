@@ -1,0 +1,27 @@
+.landing-bg {
+  background-color: #000;
+  display: grid;
+  grid-template-rows: 3fr 6fr 3fr;
+  min-height: 100vh;
+}
+
+.landing-header {
+  font-weight: 500;
+  color: white;
+  font-size: 56px;
+  margin-bottom: 15px;
+  max-width: 36vw;
+  line-height: 70px;
+  margin-left: 8vw;
+}
+
+.landing-container {
+  justify-content: flex-start;
+}
+
+.landing-svg-social {
+  width: 35px;
+  height: 35px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(326deg)
+    brightness(103%) contrast(102%);
+}

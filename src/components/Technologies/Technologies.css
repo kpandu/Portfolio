@@ -1,0 +1,12 @@
+.single-tech-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: center;
+  color: #505050;
+}
+
+.technology-bg {
+  background: #e1e1e1;
+}

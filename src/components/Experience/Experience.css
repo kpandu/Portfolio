@@ -1,0 +1,67 @@
+.single-exp-container {
+  padding: 100px 0;
+}
+
+.single-exp-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  text-align: start;
+  display: block;
+}
+
+.single-exp-caption {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  text-align: start;
+  line-height: 30px;
+}
+
+.single-exp-paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+  text-align: justify;
+}
+
+.single-exp-bullets {
+  font-weight: 400;
+  font-size: 14px !important;
+  width: 80%;
+  line-height: 1.5;
+  line-height: 30px;
+}
+
+.single-exp-card {
+  padding: 50px;
+  border-radius: 19px;
+  margin: -29px !important;
+}
+
+.single-exp-index {
+  font-size: 96px;
+  font-weight: 700;
+  margin: 0;
+  text-align: end;
+  margin-top: auto;
+}
+
+.exp-container {
+  margin: 0px 0;
+  position: relative;
+}
+
+.exp-header {
+  margin: 90px 0 !important;
+}
+
+.single-exp-text {
+  color: black;
+}
+
+.single-exp-body {
+  height: 100%;
+  padding: 60px 50px 20px 50px;
+}

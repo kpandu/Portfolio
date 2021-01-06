@@ -1,0 +1,10 @@
+.section-number-white {
+  color: #fefefe;
+}
+.section-number-black {
+  color: #141414;
+  font-weight: 500;
+}
+.section-number-hr {
+  width: min(26vw, 300px);
+}
