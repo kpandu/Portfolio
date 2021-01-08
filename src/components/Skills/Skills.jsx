@@ -1,9 +1,8 @@
-import { Container, Grid } from '@material-ui/core';
-import React from 'react';
-import './Skills.css';
-import RadialStats from './RadialStats';
-import SectionNumber from '../Shared/SectionNumber';
-import CustomContainer from '../Shared/CustomContainer';
+import { Container, Grid } from "@material-ui/core";
+import React from "react";
+import "./Skills.css";
+import RadialStats from "./RadialStats";
+
 function Skills() {
   return (
     <div>
@@ -33,7 +32,6 @@ function Skills() {
               foritify my own code against attacks. These are a couple of
               examples of how I am a full-stack developer with a wide skillset.
             </p>
-            <SectionNumber number="0x3" light />
           </Container>
         </Grid>
 

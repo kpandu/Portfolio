@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "./MobileApps.css";
 import TwoHalfProjectCard from "./TwoHalfProjectCard";
 import FullProjectCard from "./FullProjectCard";
-import CenteredGridContainer from "../Shared/CenteredGridContainer";
+import CenteredGridContainer from "../../Shared/CenteredGridContainer";
 
 export default class MobileApps extends Component {
   render() {

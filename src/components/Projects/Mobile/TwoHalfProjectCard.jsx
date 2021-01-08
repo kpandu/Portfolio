@@ -15,7 +15,7 @@ function TwoHalfProjectCard({
       container
       justify="center"
       alignItems="center"
-      spacing={2}
+      spacing={1}
       alignItems="stretch"
       item
       direction={flipHorizontal ? "row-reverse" : "row"}
@@ -28,7 +28,7 @@ function TwoHalfProjectCard({
         direction="column"
         className="two-half-text-container"
       >
-        <TwoHalfGridItemBody className={textClassName}>
+        <TwoHalfGridItemBody className={`${textClassName} project-rounded`}>
           <div>
             <h1 className="project-header">{title}</h1>
             <p className="project-body">{description}</p>
@@ -42,8 +42,9 @@ function TwoHalfProjectCard({
         xs={12}
         justify="center"
         alignContent="center"
+        className="project-rounded"
       >
-        <TwoHalfGridItemBody className={bodyClassName}>
+        <TwoHalfGridItemBody className={`${bodyClassName} project-rounded`}>
           {body}
         </TwoHalfGridItemBody>
       </Grid>

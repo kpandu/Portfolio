@@ -7,10 +7,11 @@
   display: flex;
 }
 .nav-link-container-desktop p {
-  margin-left: 60px;
+  margin-left: 40px;
   font-weight: 400;
   font-size: 15px;
   color: rgb(238, 238, 238);
+  cursor: pointer;
 }
 
 .nav-link-container-desktop {
@@ -52,4 +53,8 @@
 .navbar-menu p {
   font-family: "Poppins" !important;
   padding-right: 50px;
+}
+
+.nav-logo {
+  padding-top: 10px;
 }

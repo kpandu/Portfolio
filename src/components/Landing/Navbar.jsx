@@ -37,7 +37,7 @@ function Navbar() {
             <p href="#About">Skills</p>
           </MenuItem>
           <MenuItem>
-            <p href="#About">Leadership</p>
+            <p href="#About">Education</p>
           </MenuItem>
           <MenuItem>
             <p href="#About">Experience</p>
@@ -65,7 +65,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <CustomContainer maxWidth="xl">
-        <img src={svgimg} />
+        <img src={svgimg} className="nav-logo" />
         {desktopNavbar}
         {mobileNavbar}
       </CustomContainer>

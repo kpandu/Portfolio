@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
@@ -43,10 +43,21 @@ html {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 65px;
+  font-size: 45px;
   line-height: 1.2em;
   color: #000000;
   margin-top: 0;
+  /* max-width: 300px; */
+}
+
+.medium-header {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.2em;
+  color: #000000;
+  margin: 0;
   /* max-width: 300px; */
 }
 

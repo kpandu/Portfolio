@@ -65,7 +65,6 @@ export default function Contact() {
             <Grid item container direction="column" xs={6}>
               <h1 id="contact-description">
                 Made with ReactJS. <br />
-                Served through AWS S3. <br />
                 <br />
                 Krishan Panduwawala
               </h1>

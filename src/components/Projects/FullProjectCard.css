@@ -17,9 +17,19 @@
 .full-project-text {
   text-align: start;
   width: 100%;
-  margin-top: 170px;
 }
 
 .full-project-container {
-  padding: 7vh 7vw;
+  /* border-radius: 10px; */
+  background-color: rgb(241, 241, 241);
+  padding: 60px !important;
+}
+
+.full-project-grid-item {
+  width: 100%;
+  cursor: pointer;
+}
+
+.full-project-animated-div {
+  position: relative;
 }

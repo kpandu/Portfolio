@@ -1,8 +1,7 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
-import './About.css';
-import CustomContainer from '../Shared/CustomContainer';
-import SectionNumber from '../Shared/SectionNumber';
+import React from "react";
+import { Grid } from "@material-ui/core";
+import "./About.css";
+import CustomContainer from "../Shared/CustomContainer";
 
 function About() {
   return (
@@ -10,7 +9,7 @@ function About() {
       <Grid container justify="space-evenly" spacing={4}>
         <Grid item xs={12} md={6} className="flex-center">
           <img
-            src={require('../../assets/me.png').default}
+            src={require("../../assets/me.png").default}
             className="portrait"
           />
         </Grid>
@@ -33,7 +32,6 @@ function About() {
             a Software Development Engineer. A couple side interests include
             playing the piano and building computers (audiophile coming soon).
           </p>
-          <SectionNumber number="0x2" />
         </Grid>
       </Grid>
     </CustomContainer>

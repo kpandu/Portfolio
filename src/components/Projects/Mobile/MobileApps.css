@@ -40,18 +40,18 @@
 }
 
 .mobile-apps-storyboard-container img {
-  height: 62vh;
+  width: 100%;
   border-radius: 30px;
 }
 
 .mobile-apps-storyboard-img1 {
-  border: 10px solid rgb(24, 24, 24);
+  border: 12px solid rgb(24, 24, 24);
 }
 
 .mobile-apps-storyboard-img2 {
-  border: 10px solid rgb(127, 255, 195);
+  border: 12px solid rgb(127, 255, 195);
 }
 
 .mobile-apps-storyboard-img3 {
-  border: 10px solid rgb(24, 24, 24);
+  border: 12px solid rgb(24, 24, 24);
 }

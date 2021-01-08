@@ -1,18 +1,14 @@
-import { Container, Grid } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import React from "react";
 import "./Projects.css";
-import MobileApps from "./MobileApps";
+import MobileApps from "./Mobile/MobileApps";
+import NonMobileProjects from "./NonMobile/NonMobileProjects";
 
 function Projects() {
   return (
-    <Grid
-      container
-      justify="center"
-      className="projects-container"
-      direction="column"
-      spacing={2}
-    >
+    <Grid container justify="center" className="projects-container" spacing={1}>
       <MobileApps />
+      <NonMobileProjects />
     </Grid>
   );
 }

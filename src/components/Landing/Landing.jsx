@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 import Navbar from "./Navbar";
 import EmailIcon from "@material-ui/icons/Email";
 import { Grid } from "@material-ui/core";
-import SectionNumber from "../Shared/SectionNumber";
+
 class Landing extends Component {
   render() {
     return (
@@ -14,15 +14,16 @@ class Landing extends Component {
         <CustomContainer justify="flex-start">
           <Fade bottom delay={100}>
             <h1 className="landing-header">
-              Put some cool quote here to fill in the space like what I'm doing
-              now.
+              Hi. <br /> Welcome to...
+              <br /> Krishan Panduwawala's <br />
+              Portfolio Site
             </h1>
           </Fade>
         </CustomContainer>
         <CustomContainer>
           <Grid container alignItems="center" justify="space-between">
             <Grid item xs={6}>
-              <SectionNumber number={"0x1"} light />
+              <hr className="landing-hr" />
             </Grid>
             <Grid
               container

@@ -1,0 +1,14 @@
+.non-mobile-projects-crystal-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.non-mobile-projects-crystal {
+  color: white;
+  background-color: rgb(3, 3, 3);
+}
+
+.non-mobile-projects-cnn-video {
+  height: 66vh;
+  border-radius: 10px;
+}
