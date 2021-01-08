@@ -6,10 +6,17 @@ import NonMobileProjects from "./NonMobile/NonMobileProjects";
 
 function Projects() {
   return (
-    <Grid container justify="center" className="projects-container" spacing={1}>
-      <MobileApps />
-      <NonMobileProjects />
-    </Grid>
+    <div id="projects">
+      <Grid
+        container
+        justify="center"
+        className="projects-container"
+        spacing={1}
+      >
+        <MobileApps />
+        <NonMobileProjects />
+      </Grid>
+    </div>
   );
 }
 

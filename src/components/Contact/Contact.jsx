@@ -7,7 +7,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div style={{ background: "black" }}>
+    <div style={{ background: "black" }} id="contact">
       <Grid
         container
         style={{

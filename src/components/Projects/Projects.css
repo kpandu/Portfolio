@@ -1,6 +1,7 @@
 .projects-container {
   width: 100vw !important;
   /* padding: 2vh 2vw; */
+  padding-bottom: 7px;
 }
 
 .project-header {
@@ -24,4 +25,8 @@
 
 .project-container video:focus {
   outline: none;
+}
+
+.projects {
+  padding-bottom: 5px;
 }

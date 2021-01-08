@@ -5,7 +5,7 @@ import RadialStats from "./RadialStats";
 
 function Skills() {
   return (
-    <div>
+    <div id="skills">
       <Grid container justify="center" alignItems="stretch">
         <Grid
           item
