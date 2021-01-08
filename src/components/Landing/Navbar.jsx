@@ -4,6 +4,8 @@ import "./Navbar.css";
 import svgimg from "../../assets/logo.svg";
 import { MenuList, MenuItem, IconButton, Popover } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import { Link } from "react-scroll";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -31,22 +33,70 @@ function Navbar() {
       >
         <MenuList className="navbar-menu">
           <MenuItem>
-            <p href="#About">About</p>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              <p>About</p>
+            </Link>
           </MenuItem>
           <MenuItem>
-            <p href="#About">Skills</p>
+            <Link
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              <p>Skills</p>
+            </Link>
           </MenuItem>
           <MenuItem>
-            <p href="#About">Education</p>
+            <Link
+              to="education"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              <p>Education</p>
+            </Link>
           </MenuItem>
           <MenuItem>
-            <p href="#About">Experience</p>
+            <Link
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              <p>Experience</p>
+            </Link>
           </MenuItem>
           <MenuItem>
-            <p href="#About">Projects</p>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              <p>Projects</p>
+            </Link>
           </MenuItem>
           <MenuItem>
-            <p href="#About">Contact</p>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              <p>Contact</p>
+            </Link>
           </MenuItem>
         </MenuList>
       </Popover>
@@ -54,12 +104,24 @@ function Navbar() {
   );
   const desktopNavbar = (
     <div className="nav-link-container-desktop">
-      <p href="#About">About</p>
-      <p href="#About">Skills</p>
-      <p href="#About">Leadership</p>
-      <p href="#About">Experience</p>
-      <p href="#About">Projects</p>
-      <p href="#About">Contact</p>
+      <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
+        <p>About</p>
+      </Link>
+      <Link to="skills" spy={true} smooth={true} offset={50} duration={500}>
+        <p>Skills</p>
+      </Link>
+      <Link to="education" spy={true} smooth={true} offset={50} duration={500}>
+        <p>Education</p>
+      </Link>
+      <Link to="experience" spy={true} smooth={true} offset={50} duration={500}>
+        <p>Experience</p>
+      </Link>
+      <Link to="projects" spy={true} smooth={true} offset={50} duration={500}>
+        <p>Projects</p>
+      </Link>
+      <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+        <p>Contact</p>
+      </Link>
     </div>
   );
   return (

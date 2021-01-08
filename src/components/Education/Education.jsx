@@ -6,11 +6,12 @@ import "./Education.css";
 
 function Education() {
   return (
-    <div className="education">
+    <div className="education" id="education">
       <CustomContainer maxWidth="lg">
         <Grid container>
           <Grid container item xs={12} className="education-card">
             <Grid item xs={12} sm={6}>
+              <h1 className="large-header white-text">Skills</h1>
               <h1 className="medium-header education-header">
                 University of Maryland <br /> (UMD)
               </h1>
