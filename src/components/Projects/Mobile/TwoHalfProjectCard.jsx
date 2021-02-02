@@ -1,5 +1,6 @@
 import { Grid } from "@material-ui/core";
 import React from "react";
+import CustomContainer from "../../Shared/CustomContainer";
 import "./TwoHalfProjectCard.css";
 
 function TwoHalfProjectCard({
@@ -11,44 +12,46 @@ function TwoHalfProjectCard({
   flipHorizontal,
 }) {
   return (
-    <Grid
-      container
-      justify="center"
-      alignItems="center"
-      spacing={1}
-      alignItems="stretch"
-      item
-      direction={flipHorizontal ? "row-reverse" : "row"}
-    >
-      <Grid
-        item
-        md={6}
-        xs={12}
-        container
-        direction="column"
-        className="two-half-text-container"
-      >
-        <TwoHalfGridItemBody className={`${textClassName} project-rounded`}>
-          <div>
-            <h1 className="project-header">{title}</h1>
-            <p className="project-body">{description}</p>
-          </div>
-        </TwoHalfGridItemBody>
-      </Grid>
+    <CustomContainer maxWidth="lg">
       <Grid
         container
-        item
-        md={6}
-        xs={12}
         justify="center"
-        alignContent="center"
-        className="project-rounded"
+        alignItems="center"
+        spacing={1}
+        alignItems="stretch"
+        item
+        direction={flipHorizontal ? "row-reverse" : "row"}
       >
-        <TwoHalfGridItemBody className={`${bodyClassName} project-rounded`}>
-          {body}
-        </TwoHalfGridItemBody>
+        <Grid
+          item
+          md={7}
+          xs={12}
+          container
+          direction="column"
+          className="two-half-text-container"
+        >
+          <TwoHalfGridItemBody className={`${textClassName} project-rounded`}>
+            <div>
+              <h1 className="project-header">{title}</h1>
+              <p className="project-body">{description}</p>
+            </div>
+          </TwoHalfGridItemBody>
+        </Grid>
+        <Grid
+          container
+          item
+          md={5}
+          xs={12}
+          justify="center"
+          alignContent="center"
+          className="project-rounded"
+        >
+          <TwoHalfGridItemBody className={`${bodyClassName} project-rounded`}>
+            {body}
+          </TwoHalfGridItemBody>
+        </Grid>
       </Grid>
-    </Grid>
+    </CustomContainer>
   );
 }
 
@@ -58,8 +61,8 @@ function TwoHalfGridItemBody({ className, children }) {
       item
       container
       justify="center"
-      alignContent="center"
       className={`two-half-grid-item ${className || ""}`}
+      alignContent="flex-end"
     >
       {children}
     </Grid>

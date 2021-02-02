@@ -3,11 +3,13 @@
 }
 
 .single-exp-title {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 500;
   margin: 0;
   text-align: start;
   display: block;
+  color: #d5d5da;
+  z-index: 2;
 }
 
 .single-exp-caption {
@@ -16,6 +18,17 @@
   margin: 0;
   text-align: start;
   line-height: 30px;
+  color: #b4b4b7;
+}
+
+.single-exp-loc {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  text-align: start;
+  line-height: 30px;
+  color: #575757;
+  z-index: 2;
 }
 
 .single-exp-paragraph {
@@ -24,6 +37,7 @@
   font-size: 14px;
   line-height: 33px;
   text-align: justify;
+  color: #adadad;
 }
 
 .single-exp-bullets {
@@ -32,6 +46,7 @@
   width: 80%;
   line-height: 1.5;
   line-height: 30px;
+  color: #5d5d5d;
 }
 
 .single-exp-card {
@@ -41,11 +56,14 @@
 }
 
 .single-exp-index {
-  font-size: 96px;
+  font-size: 200px;
   font-weight: 700;
   margin: 0;
   text-align: end;
-  margin-top: auto;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 0;
+  padding-left: 24px;
 }
 
 .exp-container {
@@ -53,11 +71,41 @@
   position: relative;
 }
 
-.single-exp-text {
-  color: black;
+.single-exp-text-container {
+  padding-top: 40px !important;
 }
 
 .single-exp-body {
   height: 100%;
-  padding: 60px 50px 20px 50px;
+  padding: 50px 0;
+}
+
+.single-exp-hex {
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline;
+  margin-right: 24px;
+}
+
+.single-exp-caption-div {
+  border: 1px solid #252525;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.single-exp-caption-binary {
+  width: 70%;
+  color: rgb(233, 233, 233);
+  margin: 0;
+  display: inline;
+  text-align: end;
+  width: 100%;
+  font-size: 24px;
+}
+
+.exp {
+  background: #181819;
+  padding: 10vh 0;
 }

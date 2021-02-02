@@ -4,18 +4,8 @@
   width: 100%;
 }
 .about-avatar-portrait {
-  width: 275px;
-  height: 275px;
-  border-radius: 12px;
-  object-fit: cover;
-  filter: grayscale(80%);
-  transition: 0.3s;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 75px;
-  top: 107.5px;
-  text-align: center;
+  width: 100%;
+  margin: 80px 0;
 }
 
 .about-avatar-portrait:hover {
@@ -36,4 +26,8 @@
   left: 13px;
   top: 15px;
   text-align: center;
+}
+
+.about-paragraph {
+  margin-top: 0;
 }

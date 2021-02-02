@@ -6,7 +6,11 @@ import NonMobileProjects from "./NonMobile/NonMobileProjects";
 
 function Projects() {
   return (
-    <div id="projects">
+    <div id="projects" className="project">
+      <h1 className="large-header project-top-text">projects.</h1>
+      <p className="square-paragraph project-top-text">
+        mobile / vision / ml / full-stack
+      </p>
       <Grid
         container
         justify="center"

@@ -4,19 +4,11 @@
   padding-bottom: 7px;
 }
 
-.project-header {
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 72px;
-  margin: 0;
-}
-
 .project-body {
   font-size: 14px;
   line-height: 27px;
-  text-align: justify;
   max-width: 600px;
-  padding-bottom: 50px;
+  color: rgb(116, 116, 116);
 }
 
 .project-rounded {
@@ -27,6 +19,11 @@
   outline: none;
 }
 
-.projects {
-  padding-bottom: 5px;
+.project {
+  padding: 10vh 0 !important;
+}
+
+.project-top-text {
+  text-align: center;
+  max-width: 100%;
 }

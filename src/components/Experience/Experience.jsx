@@ -6,15 +6,17 @@ import { Grid } from "@material-ui/core";
 
 function Experience() {
   return (
-    <div id="experience">
+    <div id="experience" className="exp">
       <CustomContainer maxWidth="lg" className="exp-container">
         <div>
-          <h1 className="large-header exp-header">Where I've Worked</h1>
+          <h1 className="large-header white-text">work experience.</h1>
+          <p className="square-paragraph">Big knowledge</p>
 
           <Grid container alignItems="stretch">
             <SingleExp
               loc="Annapolis Juntion, MD"
-              date="June 2019 - August 2019"
+              from="June 2019"
+              to="August 2019"
               title="Boeing I&A"
               description="At BI&A I engineered a facial recognition app applying AWS
           Rekognition to identify people, objects, and frequent associations
@@ -31,14 +33,13 @@ function Experience() {
               ]}
               caption="Software Engineer Intern"
               index="01"
-              backgroundColor="#616974"
-              textColor="#CACFD3"
-              indexColor="#CCCCCC"
+              binary="0001"
             />
             <SingleExp
               title="UMD"
               loc="College Park, MD"
-              date="August 2019 - May 2020"
+              from="August 2019"
+              to="May 2020"
               description="In the class CMSC389N: Single Page Web Application Development,
           I taught ReactJS, ExpressJS, and MongoDB. I held weekly office hours and aided 
           in the creation of projects and exams. "
@@ -46,14 +47,13 @@ function Experience() {
               bullets={[]}
               caption="Teaching Assistant"
               index="02"
-              backgroundColor="#EAEAEA"
-              textColor="#2E2E2E"
-              indexColor="#2E2E2E"
+              binary="0010"
             />
             <SingleExp
               title="UMD"
               loc="College Park, MD"
-              date="August 2019 - May 2020"
+              from="August 2019"
+              to="May 2020"
               description="Under the guidance of Prof. Muhammad Nayeem Teli, Hyekang Joo, Ashan Panduwawala, and I completed a 3-point distracted/drowsy driver
           detection application that runs on a Rasberry Pi in a car. The main features include: yawn frequency detection;
           blink detection; and finally driver action detection. I completed the third part,
@@ -66,14 +66,13 @@ function Experience() {
               bullets={[]}
               caption="Undergraduate Researcher"
               index="03"
-              backgroundColor="#2E2E2E"
-              textColor="#EAEAEA"
-              indexColor="#EAEAEA"
+              binary="0011"
             />
             <SingleExp
               title="Amazon"
               loc="Seattle, WA"
-              date="May 2020 - August 2020"
+              from="May 2020"
+              to="August 2020"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -85,9 +84,7 @@ function Experience() {
               ]}
               caption="Software Development Engineer Intern"
               index="04"
-              backgroundColor="#CCCCCC"
-              textColor="#616974"
-              indexColor="#616974"
+              binary="0100"
             />
           </Grid>
         </div>

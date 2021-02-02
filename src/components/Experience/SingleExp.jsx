@@ -4,31 +4,34 @@ import React, { Component, Fragment } from "react";
 export default class SingleExp extends Component {
   render() {
     return (
-      <Grid
-        container
-        item
-        direction="column"
-        xs={12}
-        md={6}
-        justify="center"
-        alignItems="stretch"
-        alignContent="center"
-      >
+      <div className="single-exp-body">
+        <Grid container xs={12} alignItems="center">
+          <div className="single-exp-hex" />
+          <h1 className="single-exp-caption">
+            {this.props.from}
+            {" - "}
+            <br />
+            {this.props.to}
+          </h1>{" "}
+          <div className="single-exp-caption-div" />
+          <span className="single-exp-caption-binary">{this.props.binary}</span>
+        </Grid>
         <Grid
           container
-          className="single-exp-body"
-          style={{ backgroundColor: this.props.backgroundColor }}
-          direction="column"
-          justify="space-between"
+          item
+          xs={12}
+          justify="center"
+          alignItems="stretch"
+          className="single-exp-text-container"
+          alignContent="center"
         >
-          <div
-            className="single-exp-text"
-            style={{ color: this.props.textColor }}
-          >
+          <Grid container xs={12} md={6} direction="column" justify="center">
+            <p className="single-exp-index">{this.props.index}</p>
             <h1 className="single-exp-title">{this.props.title}</h1>
-            <h1 className="single-exp-caption">{this.props.caption}</h1>
             <br />
-
+            <h1 className="single-exp-loc">{this.props.loc}</h1>
+          </Grid>
+          <Grid container xs={12} md={6} justify="space-between">
             <h1 className="single-exp-paragraph">{this.props.description}</h1>
 
             <p className="single-exp-bullets">
@@ -41,36 +44,9 @@ export default class SingleExp extends Component {
                 );
               })}
             </p>
-          </div>
-          <Grid
-            container
-            justify="space-between"
-            alignContent="center"
-            style={{ color: this.props.indexColor }}
-          >
-            <Grid
-              item
-              xs={6}
-              container
-              justify="center"
-              alignContent="flex-start"
-              direction="column"
-            >
-              <h1 className="single-exp-caption">{this.props.date}</h1>
-              <h1 className="single-exp-caption">{this.props.loc}</h1>
-            </Grid>
-            <Grid
-              item
-              xs={6}
-              container
-              justify="flex-end"
-              alignContent="center"
-            >
-              <p className="single-exp-index">{this.props.index}</p>
-            </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      </div>
     );
   }
 }
