@@ -1,13 +1,39 @@
-.portrait {
-  width: 325px;
-  height: 325px;
-  border-radius: 10px;
+.about-avatar-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.about-avatar-portrait {
+  width: 275px;
+  height: 275px;
+  border-radius: 12px;
   object-fit: cover;
-  box-shadow: inset 0px 4px 4px 228px rgba(122, 47, 124, 0.45);
   filter: grayscale(80%);
   transition: 0.3s;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 75px;
+  top: 107.5px;
+  text-align: center;
 }
 
-.portrait:hover {
+.about-avatar-portrait:hover {
   filter: grayscale(0%);
+}
+
+.about-avatar-svg {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  text-align: center;
+}
+.about-avatar-svg2 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 13px;
+  top: 15px;
+  text-align: center;
 }

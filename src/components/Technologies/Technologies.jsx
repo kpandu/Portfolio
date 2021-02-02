@@ -10,7 +10,7 @@ import "./Technologies.css";
 function Technologies() {
   return (
     <div className="technology-bg">
-      <CustomContainer maxWidth="lg" height="50vh">
+      <CustomContainer maxWidth="lg" height="40vh">
         <Grid spacing={6} container justify="center">
           <SingleTech
             list={["ReactJS", "HTML", "CSS", "Android"]}

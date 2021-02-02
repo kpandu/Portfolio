@@ -6,19 +6,18 @@ import "./Education.css";
 
 function Education() {
   return (
-    <div className="education" id="education">
-      <CustomContainer maxWidth="lg">
+    <div id="education" className="education">
+      <CustomContainer maxWidth="lg" minHeight="30vh">
+        <div>
+          <h1 className="large-header">education.</h1>
+          <p className="square-paragraph education-subheader">
+            University of Maryland{" "}
+          </p>
+        </div>
+      </CustomContainer>
+      <CustomContainer maxWidth="lg" className="education-custom-container">
         <Grid container>
-          <Grid container item xs={12}>
-            <h1 className="large-header white-text">Skills</h1>
-          </Grid>
           <Grid container item xs={12} className="education-card">
-            <Grid item xs={12} sm={6}>
-              <h1 className="medium-header education-header">
-                University of Maryland <br /> (UMD)
-              </h1>
-            </Grid>
-
             <Grid item className="education-text-inner" xs={12} sm={6}>
               B.S. Computer Science <br />
               Aug 2017 - Dec. 2020 <br />
@@ -27,17 +26,13 @@ function Education() {
             </Grid>
           </Grid>
           <Grid container item xs={12} className="education-card">
-            <Grid item xs={12} sm={6}>
-              <h1 className="medium-header education-header">UMD ACM</h1>
-              <br />
-              Vice President / Vice Chair
-            </Grid>
+            <Grid item xs={12} sm={6}></Grid>
             <Grid item className="education-text-inner" xs={12} sm={6}>
-              Coordinated several events with UMD faculty, companies, and
-              students. Some of the events include "Capital One Coding Interview
-              Workshop", "Coding Interview Guide", "CS Trivia Night", and "Iribe
-              Rooftop Ice Cream Social." During my reign, the club saw a 40%
-              increase in members.
+              As Vice President & Vice Cheif of UMD ACM, I coordinated several
+              events with UMD faculty, companies, and students. Some of the
+              events include "Capital One Coding Interview Workshop", "Coding
+              Interview Guide", "CS Trivia Night", and "Iribe Rooftop Ice Cream
+              Social." During my reign, the club saw a 40% increase in members.
             </Grid>
           </Grid>
         </Grid>

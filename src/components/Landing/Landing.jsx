@@ -11,16 +11,37 @@ class Landing extends Component {
     return (
       <div className="landing-bg">
         <Navbar />
-        <CustomContainer justify="flex-start">
-          <Fade bottom delay={100}>
-            <h1 className="landing-header">
-              Hi. <br /> Welcome to...
-              <br /> Krishan Panduwawala's <br />
-              Portfolio Site
-            </h1>
-          </Fade>
+        <CustomContainer justify="flex-start" maxWidth="lg">
+          <Grid container>
+            <Grid
+              item
+              xs={12}
+              md={7}
+              container
+              direction="column"
+              justify="center"
+              className="landing-text-container"
+            >
+              <div className="landing-text-container">
+                <h1 className="large-header">
+                  full-stack software <br />
+                  engineer.
+                </h1>
+                <p className="landing-p">
+                  Welcome to Krishan Panduwawala's portfolio. I am currently a
+                  Software Development Engineer at Amazon on the MerchFT team.
+                </p>
+              </div>
+            </Grid>
+            <Grid item xs={12} md={5}>
+              <img
+                src="https://i.pinimg.com/originals/10/17/8e/10178ebec8ddd92f032a4391bf378138.png"
+                style={{ width: "100%" }}
+              />
+            </Grid>
+          </Grid>
         </CustomContainer>
-        <CustomContainer>
+        <CustomContainer maxWidth="lg">
           <Grid container alignItems="center" justify="space-between">
             <Grid item xs={6}>
               <hr className="landing-hr" />
@@ -56,7 +77,6 @@ class Landing extends Component {
 
               <Grid item>
                 <EmailIcon
-                  className="landing-svg-social"
                   style={{ fontSize: 40.5, margin: 0 }}
                   onClick={() =>
                     (window.location.href = "mailto:krishan103@hotmail.com")

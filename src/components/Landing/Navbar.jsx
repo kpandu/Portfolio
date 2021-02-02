@@ -126,7 +126,7 @@ function Navbar() {
   );
   return (
     <div className="navbar">
-      <CustomContainer maxWidth="xl">
+      <CustomContainer maxWidth="xl" className="nav-container">
         <img src={svgimg} className="nav-logo" />
         {desktopNavbar}
         {mobileNavbar}

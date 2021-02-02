@@ -45,8 +45,8 @@ export default class RadialStats extends PureComponent {
               <PolarAngleAxis dataKey="subject" />
               <Radar
                 dataKey="A"
-                stroke="#49cdff"
-                fill="#49cdff"
+                stroke="#AAAAAA"
+                fill="#CCCCCC"
                 fillOpacity={0.4}
                 animationDuration={1200}
                 animationBegin={300}

@@ -17,20 +17,19 @@ function Skills() {
           className="skills-left-bg max-height"
         >
           <Container maxWidth="sm">
-            <h1 className="large-header white-text">Skills</h1>
-            <p className="square-paragraph white-text">
+            <h1 className="large-header ">skills.</h1>
+            <p className="square-paragraph ">
               What kind of programer am I? Superficially, I am a full-stack
-              developer, however, deep down I have experienced many other
-              fields. For example, after taking a machine learning class, I
-              conducted undergraduate research using CNNs and YOLO object
-              detection to detect distracted/drowsy driving. Then in computer
-              vision I worked on implementing several algorithms such as content
-              aware seam carving to reduce the size of an image without
-              cropping. Furthermore, I took a cybersecurity course on "ethical"
-              hacking which taught a bunch of the ways to invade and break into
-              applications. By stepping in the hacker's shoes, I can better
-              foritify my own code against attacks. These are a couple of
-              examples of how I am a full-stack developer with a wide skillset.
+              developer, however, deep down I have a wide skillset. For example,
+              after taking a machine learning class, I conducted undergraduate
+              research using CNNs and YOLO object detection to detect
+              distracted/drowsy driving. Then in computer vision I worked on
+              implementing several algorithms such as content aware seam carving
+              to reduce the size of an image without cropping. Furthermore, I
+              took a cybersecurity course on "ethical" hacking which taught a
+              bunch of the ways to invade and break into applications. These are
+              a couple of examples of how I am a full-stack developer with a
+              wide skillset.
             </p>
           </Container>
         </Grid>

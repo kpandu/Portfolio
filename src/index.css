@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "DM Sans" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
@@ -40,18 +40,15 @@ html {
 }
 
 .large-header {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 1.2em;
-  color: #000000;
-  margin-top: 0;
-  /* max-width: 300px; */
+  font-weight: 800;
+  font-size: 68px;
+  margin: 0;
+  margin-bottom: 15px;
+  max-width: 50vw;
+  line-height: 70px;
 }
 
 .medium-header {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -62,13 +59,12 @@ html {
 }
 
 .square-paragraph {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
+  color: #2e2e2e;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 40px;
   line-height: 237.5%;
   /* text-align: justify; */
-  color: #464646;
 }
 
 .center-header {
