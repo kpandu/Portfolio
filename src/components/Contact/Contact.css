@@ -8,10 +8,11 @@
 }
 
 #contact-description {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   margin: 0;
   color: white;
+  opacity: 0.7;
   mix-blend-mode: difference;
   text-align: start;
 }

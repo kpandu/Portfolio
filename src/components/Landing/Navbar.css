@@ -7,7 +7,7 @@
 }
 .nav-link-container-desktop p {
   margin-left: 30px;
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .navbar-menu p {
-  font-family: "Poppins" !important;
+  font-family: "DM Sans" !important;
   padding-right: 50px;
 }
 

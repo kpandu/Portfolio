@@ -2,6 +2,7 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import "./About.css";
 import CustomContainer from "../Shared/CustomContainer";
+import LargeHeader from "../Shared/LargeHeader";
 
 function About() {
   return (
@@ -27,7 +28,9 @@ function About() {
             </p>
           </Grid>
           <Grid item container xs={12} md={6} justify="flex-end">
-            <h1 className="large-header">about me.</h1>
+            <LargeHeader>
+              <h1 className="large-header">about me.</h1>
+            </LargeHeader>
           </Grid>
           <Grid item container xs={12} container alignContent="center">
             <img

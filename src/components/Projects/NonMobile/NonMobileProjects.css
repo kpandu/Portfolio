@@ -8,7 +8,6 @@
   background-color: rgb(3, 3, 3);
 }
 
-.non-mobile-projects-cnn-video {
-  height: 66vh;
-  border-radius: 10px;
+.non-mobile-projects-video {
+  width: 100%;
 }

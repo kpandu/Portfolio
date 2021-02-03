@@ -1,10 +1,10 @@
-import { Grid } from '@material-ui/core';
-import * as easings from 'd3-ease';
-import React, { Component } from 'react';
-import TrackVisibility from 'react-on-screen';
-import { Fade } from 'react-reveal';
-import { animated } from 'react-spring';
-import { Spring } from 'react-spring/renderprops';
+import { Grid } from "@material-ui/core";
+import * as easings from "d3-ease";
+import React, { Component } from "react";
+import { Fade } from "react-reveal";
+import { animated } from "react-spring";
+import { Spring } from "react-spring/renderprops";
+import { InView } from "react-intersection-observer";
 
 export default class SingleTech extends Component {
   render() {
@@ -20,9 +20,9 @@ export default class SingleTech extends Component {
         className="single-tech-card"
       >
         <Grid item>
-          <TrackVisibility once>
-            {({ isVisible }) =>
-              isVisible && (
+          <InView>
+            {({ inView, ref, entry }) =>
+              inView && (
                 <Spring
                   from={{ value: 2 }}
                   to={{ value: 50 }}
@@ -51,7 +51,7 @@ export default class SingleTech extends Component {
                 </Spring>
               )
             }
-          </TrackVisibility>
+          </InView>
         </Grid>
 
         <Fade delay={1800 + this.props.delay / 1.5} cascade>

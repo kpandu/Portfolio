@@ -10,6 +10,7 @@ function TwoHalfProjectCard({
   textClassName,
   bodyClassName,
   flipHorizontal,
+  index = "XX",
 }) {
   return (
     <CustomContainer maxWidth="lg">
@@ -34,6 +35,10 @@ function TwoHalfProjectCard({
             <div>
               <h1 className="project-header">{title}</h1>
               <p className="project-body">{description}</p>
+              <Grid item container alignItems="center">
+                <div className="full-mobile-card-hr" />
+                <p className="full-mobile-card-number">0{index}</p>
+              </Grid>
             </div>
           </TwoHalfGridItemBody>
         </Grid>
@@ -62,7 +67,7 @@ function TwoHalfGridItemBody({ className, children }) {
       container
       justify="center"
       className={`two-half-grid-item ${className || ""}`}
-      alignContent="flex-end"
+      alignContent="center"
     >
       {children}
     </Grid>

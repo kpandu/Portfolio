@@ -1,0 +1,36 @@
+.full-mobile-card-body {
+  width: 100%;
+}
+
+.full-mobile-card-text p {
+  max-width: 500px;
+}
+
+.full-mobile-card-text {
+  width: 100%;
+  padding: 100px;
+}
+
+.full-mobile-card-container {
+  /* border-radius: 10px; */
+}
+
+.full-mobile-card-grid-item {
+  width: 100%;
+  padding-top: 5vh !important;
+}
+
+.full-mobile-card-animated-div {
+  position: relative;
+}
+
+.full-mobile-card-number {
+  margin: 0;
+  margin-left: 25px;
+  font-size: 24px;
+}
+
+.full-mobile-card-hr {
+  border-top: 1px solid grey;
+  width: 40%;
+}

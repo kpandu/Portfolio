@@ -1,13 +1,13 @@
 .mobile-apps-phone-1 {
   border-radius: 40px;
   border: 15px solid black;
-  height: 70%;
+  max-width: max(25vw, 300px);
 }
 
 .mobile-apps-phone-2 {
-  max-height: 85vh;
   border-radius: 40px;
-  border: 18px solid rgb(61, 61, 61);
+  border: 15px solid rgb(61, 61, 61);
+  max-width: max(25vw, 300px);
 }
 
 .mobile-apps-r1-c1 {
@@ -34,18 +34,35 @@
 }
 
 .mobile-apps-storyboard-container img {
-  width: 100%;
+  width: 80%;
   border-radius: 30px;
 }
 
 .mobile-apps-storyboard-img1 {
-  border: 12px solid rgb(24, 24, 24);
+  border: 10px solid rgb(24, 24, 24);
+  max-width: 275px;
 }
 
 .mobile-apps-storyboard-img2 {
-  border: 12px solid rgb(127, 255, 195);
+  border: 10px solid rgb(209, 209, 209);
+  max-width: 275px;
 }
 
 .mobile-apps-storyboard-img3 {
-  border: 12px solid rgb(24, 24, 24);
+  border: 10px solid rgb(24, 24, 24);
+  max-width: 275px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mobile-apps-storyboard-img1 {
+    margin-top: 0vh;
+  }
+
+  .mobile-apps-storyboard-img2 {
+    margin-top: 20vh;
+  }
+
+  .mobile-apps-storyboard-img3 {
+    margin-top: 40vh;
+  }
 }

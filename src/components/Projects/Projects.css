@@ -4,11 +4,18 @@
   padding-bottom: 7px;
 }
 
+.project-header {
+  margin-top: 0;
+  color: #242425;
+  font-weight: 500;
+  font-size: 27px;
+}
 .project-body {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 27px;
-  max-width: 600px;
-  color: rgb(116, 116, 116);
+  max-width: 400px;
+  color: #b9b9b9;
+  margin-top: 0;
 }
 
 .project-rounded {

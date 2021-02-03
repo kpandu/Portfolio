@@ -5,7 +5,7 @@ import svgimg from "../../assets/logo.svg";
 import { MenuList, MenuItem, IconButton, Popover } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-scroll";
-
+import { Spring } from "react-spring/renderprops";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -13,6 +13,12 @@ function Navbar() {
   const handleMenuClick = ({ currentTarget }) => {
     setIsOpen(!isOpen);
     setAnchorEl(currentTarget);
+  };
+
+  const commonAnimationProps = {
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 600 },
   };
 
   const mobileNavbar = (
@@ -105,29 +111,44 @@ function Navbar() {
   const desktopNavbar = (
     <div className="nav-link-container-desktop">
       <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
-        <p>About</p>
+        <Spring {...commonAnimationProps} delay={200}>
+          {(props) => <p style={props}>About</p>}
+        </Spring>
       </Link>
       <Link to="skills" spy={true} smooth={true} offset={50} duration={500}>
-        <p>Skills</p>
+        <Spring {...commonAnimationProps} delay={300}>
+          {(props) => <p style={props}>Skills</p>}
+        </Spring>
       </Link>
       <Link to="education" spy={true} smooth={true} offset={50} duration={500}>
-        <p>Education</p>
+        <Spring {...commonAnimationProps} delay={400}>
+          {(props) => <p style={props}>Education</p>}
+        </Spring>
       </Link>
       <Link to="experience" spy={true} smooth={true} offset={50} duration={500}>
-        <p>Experience</p>
+        <Spring {...commonAnimationProps} delay={500}>
+          {(props) => <p style={props}>Experience</p>}
+        </Spring>
       </Link>
       <Link to="projects" spy={true} smooth={true} offset={50} duration={500}>
-        <p>Projects</p>
+        <Spring {...commonAnimationProps} delay={600}>
+          {(props) => <p style={props}>Projects</p>}
+        </Spring>
       </Link>
       <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
-        <p>Contact</p>
+        <Spring {...commonAnimationProps} delay={700}>
+          {(props) => <p style={props}>Contact</p>}
+        </Spring>
       </Link>
     </div>
   );
   return (
     <div className="navbar">
       <CustomContainer maxWidth="xl" className="nav-container">
-        <img src={svgimg} className="nav-logo" />
+        <Spring {...commonAnimationProps} config={{ duration: 1500 }}>
+          {(props) => <img src={svgimg} style={props} className="nav-logo" />}
+        </Spring>
+
         {desktopNavbar}
         {mobileNavbar}
       </CustomContainer>
