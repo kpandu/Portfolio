@@ -8,6 +8,7 @@ import LargeHeader from "../Shared/LargeHeader";
 import { Spring } from "react-spring/renderprops";
 import { easePolyOut } from "d3-ease";
 import Fade from "../Shared/Fade";
+import Paragraph from "../Shared/Paragraph";
 class Landing extends Component {
   render() {
     return (
@@ -27,20 +28,20 @@ class Landing extends Component {
               <div className="landing-text-container">
                 <h1 className="large-header">
                   <LargeHeader>
-                    <span>full-stack software</span>
-                    <span> engineer.</span>
+                    <span>full-stack </span>
+                    <span>software engineer.</span>
                   </LargeHeader>
                 </h1>
                 <p className="landing-p">
-                  <Fade duration={3000} fadeOptions={{ delay: 400 }}>
+                  <Paragraph>
                     Welcome to Krishan Panduwawala's portfolio. I am currently a
                     Software Development Engineer at Amazon on the MerchFT team.
-                  </Fade>
+                  </Paragraph>
                 </p>
               </div>
             </Grid>
             <Grid item xs={12} md={5}>
-              <Fade duration={3500}>
+              <Fade duration={3500} inView>
                 <img
                   src={require("../../assets/keyboard.png").default}
                   style={{ width: "100%" }}
@@ -70,7 +71,7 @@ class Landing extends Component {
               alignItems="center"
             >
               <Grid item>
-                <Fade duration={3000} fadeOptions={{ delay: 400 }}>
+                <Fade duration={3000} fadeOptions={{ delay: 400 }} inView>
                   <img
                     src={require("../../assets/github.svg").default}
                     className="landing-svg-social"
@@ -81,7 +82,7 @@ class Landing extends Component {
                 </Fade>
               </Grid>
               <Grid item>
-                <Fade duration={3000} fadeOptions={{ delay: 600 }}>
+                <Fade duration={3000} fadeOptions={{ delay: 600 }} inView>
                   <img
                     src={require("../../assets/linkedin.svg").default}
                     className="landing-svg-social"
@@ -95,7 +96,7 @@ class Landing extends Component {
               </Grid>
 
               <Grid item>
-                <Fade duration={3000} fadeOptions={{ delay: 800 }}>
+                <Fade duration={3000} fadeOptions={{ delay: 800 }} inView>
                   <EmailIcon
                     style={{ fontSize: 40.5, margin: 0 }}
                     onClick={() =>

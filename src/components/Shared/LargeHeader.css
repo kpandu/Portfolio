@@ -1,14 +1,13 @@
-.trails-text {
+.large-header-text {
   position: relative;
   width: 100%;
   height: 90px;
   line-height: 90px;
-  color: black;
   will-change: transform, opacity;
   overflow: hidden;
 }
 
-.trails-text > div {
+.large-header-text > div {
   overflow: hidden;
 }
 

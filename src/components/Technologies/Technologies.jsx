@@ -22,13 +22,13 @@ function Technologies() {
             list={["ExpressJS", "SQL", "MongoDB", "AWS"]}
             color="#565656"
             svg={() => <MemoryOutlinedIcon style={{ color: "white" }} />}
-            delay={500}
+            delay={300}
           />
           <SingleTech
             list={["Tensorflow", "Pytorch", "CV2", "Keras"]}
             color="#565656"
             svg={() => <VisibilityOutlinedIcon style={{ color: "white" }} />}
-            delay={1000}
+            delay={600}
           />
         </Grid>
       </CustomContainer>

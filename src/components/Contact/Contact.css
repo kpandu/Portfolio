@@ -1,13 +1,4 @@
-#quote {
-  font-size: 50px;
-  font-family: "Montserrat";
-  font-weight: 700;
-  color: white;
-  padding: 15%;
-  text-align: start;
-}
-
-#contact-description {
+.contact-description {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
@@ -17,20 +8,7 @@
   text-align: start;
 }
 
-.link {
-  color: "black";
-  z-index: 5;
-  margin-right: 15px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  font-size: 30px;
-}
-
-#title {
-  font-size: 48px;
-  font-weight: 500;
-  margin: 0;
+.contact-title {
   color: white;
   mix-blend-mode: difference;
   text-align: start;

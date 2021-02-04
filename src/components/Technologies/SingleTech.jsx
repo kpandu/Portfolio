@@ -1,9 +1,8 @@
 import { Grid } from "@material-ui/core";
 import * as easings from "d3-ease";
 import React, { Component } from "react";
-import { Fade } from "react-reveal";
 import { animated } from "react-spring";
-import { Spring } from "react-spring/renderprops";
+import { Spring, Trail } from "react-spring/renderprops";
 import { InView } from "react-intersection-observer";
 
 export default class SingleTech extends Component {
@@ -20,47 +19,66 @@ export default class SingleTech extends Component {
         className="single-tech-card"
       >
         <Grid item>
-          <InView>
-            {({ inView, ref, entry }) =>
-              inView && (
-                <Spring
-                  from={{ value: 2 }}
-                  to={{ value: 50 }}
-                  config={{
-                    duration: 5500,
-                    easing: easings.easeCubic,
-                  }}
-                  delay={this.props.delay}
-                  reset
-                >
-                  {(props) => (
-                    <Fade zoom delay={this.props.delay}>
-                      <animated.svg
-                        width="100"
-                        height="100"
-                        stroke={this.props.color}
-                        fillOpacity={0}
-                        strokeWidth={0.35}
-                        strokeDasharray={props.value * 3}
-                        strokeDashoffset={props.value}
-                      >
-                        <this.props.svg></this.props.svg>
-                      </animated.svg>
-                    </Fade>
-                  )}
-                </Spring>
-              )
-            }
+          <InView triggerOnce delay={this.props.delay}>
+            {({ inView, ref, entry }) => (
+              <Spring
+                to={inView ? { opacity: 0.9, y: 0 } : { opacity: 0, y: 5 }}
+                config={{
+                  duration: 1500,
+                  easing: easings.easePolyInOut,
+                }}
+                delay={this.props.delay}
+                // reset
+              >
+                {({ opacity, y }) => (
+                  <div
+                    ref={ref}
+                    style={{
+                      opacity,
+                      transform: `translate3d(0,${y}px,0)`,
+                    }}
+                  >
+                    <Spring
+                      to={inView ? { value: 50 } : { value: 2 }}
+                      config={{
+                        duration: 5500,
+                        easing: easings.easePolyInOut,
+                      }}
+                      delay={this.props.delay}
+                      // reset
+                    >
+                      {({ value }) => (
+                        <animated.svg
+                          width="100"
+                          height="100"
+                          stroke={this.props.color}
+                          strokeWidth={0.35}
+                          strokeDasharray={value * 3 || 2}
+                          strokeDashoffset={value || 2}
+                        >
+                          <this.props.svg />
+                        </animated.svg>
+                      )}
+                    </Spring>
+                  </div>
+                )}
+              </Spring>
+            )}
           </InView>
         </Grid>
 
-        <Fade delay={1800 + this.props.delay / 1.5} cascade>
-          <h1 className="single-tech-list">
-            {this.props.list.map((x) => {
-              return <p key={x}>{x}</p>;
-            })}
-          </h1>
-        </Fade>
+        <h1 className="single-tech-list">
+          <Trail
+            delay={this.props.delay}
+            items={this.props.list}
+            keys={(item) => item}
+            from={{ transform: "translate3d(0,-10px,0)", opacity: 0 }}
+            to={{ transform: "translate3d(0,0px,0)", opacity: 1 }}
+            config={{ easing: easings.easeQuadInOut }}
+          >
+            {(item) => (props) => <p style={props}>{item}</p>}
+          </Trail>
+        </h1>
       </Grid>
     );
   }

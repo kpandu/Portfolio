@@ -8,7 +8,7 @@
   margin-top: 0;
   color: #242425;
   font-weight: 500;
-  font-size: 27px;
+  font-size: 32px;
 }
 .project-body {
   font-size: 15px;
@@ -33,4 +33,8 @@
 .project-top-text {
   text-align: center;
   max-width: 100%;
+}
+
+.project-top-text {
+  text-align: center;
 }

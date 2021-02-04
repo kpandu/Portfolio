@@ -1,0 +1,12 @@
+.paragraph-text {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+
+.paragraph-text > div {
+  overflow: hidden;
+}

@@ -3,13 +3,20 @@ import React from "react";
 import "./Projects.css";
 import MobileApps from "./Mobile/MobileApps";
 import NonMobileProjects from "./NonMobile/NonMobileProjects";
+import LargeHeader from "../Shared/LargeHeader";
+import Paragraph from "../Shared/Paragraph";
+import CenteredGridContainer from "../Shared/CenteredGridContainer";
 
 function Projects() {
   return (
     <div id="projects" className="project">
-      <h1 className="large-header project-top-text">projects.</h1>
+      <CenteredGridContainer>
+        <LargeHeader>
+          <h1 className="large-header project-top-text">projects.</h1>
+        </LargeHeader>
+      </CenteredGridContainer>
       <p className="square-paragraph project-top-text">
-        mobile / vision / ml / full-stack
+        <Paragraph>mobile / vision / ml / full-stack</Paragraph>
       </p>
       <Grid
         container

@@ -6,6 +6,8 @@
 .about-avatar-portrait {
   width: 100%;
   margin: 80px 0;
+  height: 350px;
+  object-fit: cover;
 }
 
 .about-avatar-portrait:hover {

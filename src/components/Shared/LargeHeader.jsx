@@ -15,12 +15,12 @@ function LargeHeader({ children, ...props }) {
       : { opacity: 0, y: 40, height: 0 },
   });
   return (
-    <div className="trails-main" {...props}>
+    <div className="large-header-main" {...props}>
       <InView as="div" onChange={(e) => setInView(e)} threshold={1} triggerOnce>
         {trail.map(({ y, height, ...rest }, index) => (
           <a.div
             key={items[index]}
-            className="trails-text large-header"
+            className="large-header-text large-header"
             style={{
               ...rest,
               transform: y.interpolate((y) => `translate3d(0,${y}px,0)`),

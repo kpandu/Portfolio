@@ -1,10 +1,8 @@
 import { Grid } from "@material-ui/core";
 import React, { Component } from "react";
+import FullMobileCard from "./FullMobileCard";
 import "./MobileApps.css";
 import TwoHalfProjectCard from "./TwoHalfProjectCard";
-import FullProjectCard from "../NonMobile/SmallProjectCard";
-import CenteredGridContainer from "../../Shared/CenteredGridContainer";
-import FullMobileCard from "./FullMobileCard";
 
 export default class MobileApps extends Component {
   render() {

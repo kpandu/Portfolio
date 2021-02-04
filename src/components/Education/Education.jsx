@@ -1,7 +1,8 @@
 import { Grid } from "@material-ui/core";
 import React from "react";
-import CenteredGridContainer from "../Shared/CenteredGridContainer";
 import CustomContainer from "../Shared/CustomContainer";
+import LargeHeader from "../Shared/LargeHeader";
+import Paragraph from "../Shared/Paragraph";
 import "./Education.css";
 
 function Education() {
@@ -9,9 +10,11 @@ function Education() {
     <div id="education" className="education">
       <CustomContainer maxWidth="lg" minHeight="30vh">
         <div>
-          <h1 className="large-header">education.</h1>
+          <h1 className="large-header">
+            <LargeHeader>education.</LargeHeader>
+          </h1>
           <p className="square-paragraph education-subheader">
-            University of Maryland{" "}
+            <Paragraph>University of Maryland </Paragraph>
           </p>
         </div>
       </CustomContainer>
@@ -19,20 +22,25 @@ function Education() {
         <Grid container>
           <Grid container item xs={12} className="education-card">
             <Grid item className="education-text-inner" xs={12} sm={6}>
-              B.S. Computer Science <br />
-              Aug 2017 - Dec. 2020 <br />
-              GPA: 3.75 <br />
-              Upper Level Concentration in Math / Stat
+              <Paragraph>
+                B.S. Computer Science <br />
+                Aug 2017 - Dec. 2020 <br />
+                GPA: 3.75 <br />
+                Upper Level Concentration in Math / Stat
+              </Paragraph>
             </Grid>
           </Grid>
           <Grid container item xs={12} className="education-card">
             <Grid item xs={12} sm={6}></Grid>
             <Grid item className="education-text-inner" xs={12} sm={6}>
-              As Vice President & Vice Cheif of UMD ACM, I coordinated several
-              events with UMD faculty, companies, and students. Some of the
-              events include "Capital One Coding Interview Workshop", "Coding
-              Interview Guide", "CS Trivia Night", and "Iribe Rooftop Ice Cream
-              Social." During my reign, the club saw a 40% increase in members.
+              <Paragraph>
+                As Vice President & Vice Cheif of UMD ACM, I coordinated several
+                events with UMD faculty, companies, and students. Some of the
+                events include "Capital One Coding Interview Workshop", "Coding
+                Interview Guide", "CS Trivia Night", and "Iribe Rooftop Ice
+                Cream Social." During my reign, the club saw a 40% increase in
+                members.
+              </Paragraph>
             </Grid>
           </Grid>
         </Grid>

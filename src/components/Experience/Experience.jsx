@@ -3,14 +3,17 @@ import SingleExp from "./SingleExp";
 import CustomContainer from "../Shared/CustomContainer";
 import "./Experience.css";
 import { Grid } from "@material-ui/core";
+import LargeHeader from "../Shared/LargeHeader";
 
 function Experience() {
   return (
     <div id="experience" className="exp">
       <CustomContainer maxWidth="lg" className="exp-container">
         <div>
-          <h1 className="large-header white-text">work experience.</h1>
-          <p className="square-paragraph">Big knowledge</p>
+          <h1 className="large-header white-text">
+            <LargeHeader>work experience.</LargeHeader>
+          </h1>
+          <p className="square-paragraph"></p>
 
           <Grid container alignItems="stretch">
             <SingleExp
