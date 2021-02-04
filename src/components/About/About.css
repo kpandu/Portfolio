@@ -38,11 +38,12 @@
   /* The image used */
   background-image: url("../../assets/setup.jpg");
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 525px;
+  margin-top: 70px;
   width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
