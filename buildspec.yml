@@ -10,6 +10,8 @@ phases:
       - echo Build started on `date`
       - npm run build
       - aws s3 sync ./build s3://kpandu.com
+      - aws cloudfront create-invalidation --distribution-id 	
+E3P4M0KC33680L --paths "/*"
   post_build:
     commands:
       - echo Deployed on `date`
