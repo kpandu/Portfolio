@@ -20,7 +20,9 @@ function Skills() {
         >
           <Container maxWidth="sm">
             <h1 className="large-header ">
-              <LargeHeader>skills.</LargeHeader>
+              <LargeHeader>
+                <span>skills.</span>
+              </LargeHeader>
             </h1>
             <p className="square-paragraph ">
               <Paragraph>

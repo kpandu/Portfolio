@@ -1,13 +1,16 @@
 .mobile-apps-phone-1 {
   border-radius: 40px;
   border: 15px solid black;
-  max-width: max(25vw, 300px);
+  width: 25vw;
+  max-width: 300px;
 }
 
 .mobile-apps-phone-2 {
   border-radius: 40px;
   border: 15px solid rgb(61, 61, 61);
   max-width: max(25vw, 300px);
+  width: 25vw;
+  max-width: 300px;
 }
 
 .mobile-apps-r1-c1 {

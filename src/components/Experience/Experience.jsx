@@ -11,7 +11,9 @@ function Experience() {
       <CustomContainer maxWidth="lg" className="exp-container">
         <div>
           <h1 className="large-header white-text">
-            <LargeHeader>work experience.</LargeHeader>
+            <LargeHeader>
+              <span>work experience.</span>
+            </LargeHeader>
           </h1>
           <p className="square-paragraph"></p>
 

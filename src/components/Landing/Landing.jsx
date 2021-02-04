@@ -19,7 +19,7 @@ class Landing extends Component {
             <Grid
               item
               xs={12}
-              md={7}
+              lg={7}
               container
               direction="column"
               justify="center"
@@ -29,7 +29,8 @@ class Landing extends Component {
                 <h1 className="large-header">
                   <LargeHeader>
                     <span>full-stack </span>
-                    <span>software engineer.</span>
+                    <span>software</span>
+                    <span>engineer.</span>
                   </LargeHeader>
                 </h1>
                 <p className="landing-p">
@@ -40,11 +41,11 @@ class Landing extends Component {
                 </p>
               </div>
             </Grid>
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} lg={5}>
               <Fade duration={3500} inView>
                 <img
                   src={require("../../assets/keyboard.png").default}
-                  style={{ width: "100%" }}
+                  className="landing-keyboard"
                 />
               </Fade>
             </Grid>
@@ -52,7 +53,7 @@ class Landing extends Component {
         </CustomContainer>
         <CustomContainer maxWidth="lg">
           <Grid container alignItems="center" justify="space-between">
-            <Grid item xs={6}>
+            <Grid item xs={10}>
               <Spring
                 delay={200}
                 from={{ width: 0 }}
@@ -65,12 +66,12 @@ class Landing extends Component {
             <Grid
               container
               item
-              spacing={2}
-              xs={6}
+              spacing={1}
+              xs={2}
               justify="flex-end"
               alignItems="center"
             >
-              <Grid item>
+              <Grid item md>
                 <Fade duration={3000} fadeOptions={{ delay: 400 }} inView>
                   <img
                     src={require("../../assets/github.svg").default}
@@ -81,7 +82,7 @@ class Landing extends Component {
                   />
                 </Fade>
               </Grid>
-              <Grid item>
+              <Grid item md>
                 <Fade duration={3000} fadeOptions={{ delay: 600 }} inView>
                   <img
                     src={require("../../assets/linkedin.svg").default}
@@ -95,7 +96,7 @@ class Landing extends Component {
                 </Fade>
               </Grid>
 
-              <Grid item>
+              <Grid item md>
                 <Fade duration={3000} fadeOptions={{ delay: 800 }} inView>
                   <EmailIcon
                     style={{ fontSize: 40.5, margin: 0 }}

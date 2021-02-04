@@ -66,7 +66,11 @@ export default [
     title: "V3 Midnight",
     description:
       "Built a simple dark themed portfolio that preceded the current site.",
-    imgs: [require("../../../assets/midnight-1.PNG").default],
+    imgs: [
+      require("../../../assets/midnight-1.PNG").default,
+      require("../../../assets/midnight-2.PNG").default,
+      require("../../../assets/midnight-3.PNG").default,
+    ],
     tags: ["JS", "ReactJS"],
   },
 ];

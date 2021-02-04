@@ -15,10 +15,10 @@ function App() {
       <About />
       <Skills />
       <Technologies />
-      <Education />
+      {/* <Education />
       <Experience />
       <Projects />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }

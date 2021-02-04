@@ -19,7 +19,7 @@ function LargeHeader({ children, ...props }) {
       <InView as="div" onChange={(e) => setInView(e)} threshold={1} triggerOnce>
         {trail.map(({ y, height, ...rest }, index) => (
           <a.div
-            key={items[index]}
+            key={items[index].props.children}
             className="large-header-text large-header"
             style={{
               ...rest,
