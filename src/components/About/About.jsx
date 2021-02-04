@@ -47,17 +47,23 @@ function About() {
                   to={{
                     width: inView ? "100%" : "0%",
                     opacity: inView ? 1 : 0,
+                    greyscaleVal: inView ? 0 : 1,
                   }}
                 >
                   {(props) => (
-                    <img
+                    <div
+                      className="about-parallax"
+                      style={{
+                        ...props,
+                        filter: `grayscale(${props.greyscaleVal})`,
+                      }}
                       ref={ref}
-                      style={props}
-                      src="https://c4.wallpaperflare.com/wallpaper/33/266/521/nier-ultrawide-dark-hd-wallpaper-preview.jpg"
-                      className="about-avatar-portrait"
                     />
                   )}
                 </Spring>
+              </Grid>
+              <Grid item container xs={12} container alignContent="center">
+                <b>2020 WFH Setup</b>
               </Grid>
             </Grid>
           )}
