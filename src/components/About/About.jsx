@@ -12,7 +12,7 @@ function About() {
   return (
     <div id="about">
       <CustomContainer height="70vh" maxWidth="lg">
-        <InView style={{ width: "100%" }}>
+        <InView style={{ width: "100%" }} triggerOnce>
           {({ inView, ref, entry }) => (
             <Grid container justify="space-evenly" spacing={4}>
               <Grid
@@ -63,7 +63,7 @@ function About() {
                 </Spring>
               </Grid>
               <Grid item container xs={12} container alignContent="center">
-                <b>2020 WFH Setup</b>
+                <b>2021 WFH Setup</b>
               </Grid>
             </Grid>
           )}
