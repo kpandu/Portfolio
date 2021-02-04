@@ -11,7 +11,9 @@ function Education() {
       <CustomContainer maxWidth="lg" minHeight="30vh">
         <div>
           <h1 className="large-header">
-            <LargeHeader>education.</LargeHeader>
+            <LargeHeader>
+              <span>education.</span>
+            </LargeHeader>
           </h1>
           <p className="square-paragraph education-subheader">
             <Paragraph>University of Maryland </Paragraph>
