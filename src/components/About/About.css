@@ -38,7 +38,8 @@
   /* The image used */
   background-image: url("../../assets/setup.jpg");
   /* Set a specific height */
-  min-height: 525px;
+  height: 45vh;
+  max-height: 600px;
   margin-top: 70px;
   width: 100%;
   /* Create the parallax scrolling effect */
