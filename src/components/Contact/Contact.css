@@ -24,3 +24,14 @@
   opacity: 0.4;
   margin: 5px 0;
 }
+
+.contact {
+  background: black;
+  height: 100vh;
+  z-index: 1;
+}
+
+.contact-inner-container {
+  position: relative;
+  height: 100%;
+}

@@ -13,6 +13,7 @@ function CustomContainer(props) {
         justifyContent: props.justify || "center",
         alignItems: props.alignItems || "center",
       }}
+      id={props.id}
     >
       {props.children}
     </Container>

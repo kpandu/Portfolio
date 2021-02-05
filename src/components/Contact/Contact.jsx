@@ -8,20 +8,15 @@ import CustomContainer from "../Shared/CustomContainer";
 
 export default function Contact() {
   return (
-    <CustomContainer className="contact" id="contact" height="100vh">
-      <Grid
-        container
-        style={{
-          position: "relative",
-        }}
-        alignItems="center"
-      >
-        <InView>
+    <div className="contact flex-center" id="contact">
+      <Grid container className="contact-inner-container" alignItems="center">
+        <InView threshold={0.6}>
           {({ inView, ref, entry }) => (
             <Spring
               delay={1000}
               config={{ duration: 800 }}
               to={{ opacity: inView ? 1 : 0 }}
+              delay={1000}
             >
               {({ opacity }) => (
                 <div
@@ -97,6 +92,6 @@ export default function Contact() {
           </Grid>
         </Container>
       </Grid>
-    </CustomContainer>
+    </div>
   );
 }
