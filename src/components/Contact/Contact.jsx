@@ -4,14 +4,14 @@ import { InView } from "react-intersection-observer";
 import { Spring } from "react-spring/renderprops";
 import LargeHeader from "../Shared/LargeHeader";
 import "./Contact.css";
+import CustomContainer from "../Shared/CustomContainer";
 
 export default function Contact() {
   return (
-    <div style={{ background: "black" }} id="contact">
+    <CustomContainer className="contact" id="contact" height="100vh">
       <Grid
         container
         style={{
-          minHeight: "100vh",
           position: "relative",
         }}
         alignItems="center"
@@ -48,8 +48,8 @@ export default function Contact() {
             justify="flex-start"
             alignItems="center"
           >
-            <Grid item xs={6}>
-              <h1 className="large-header">
+            <Grid item xs={8}>
+              <h1 className="large-header contact-title">
                 <LargeHeader>
                   <span>many more</span>
                   <span>changes to come...</span>
@@ -65,16 +65,38 @@ export default function Contact() {
             alignItems="flex-end"
             direction="column"
           >
-            <Grid item container direction="column" xs={6}>
-              <h1 className="contact-description">
-                Made with ReactJS. <br />
-                <br />
-                Krishan Panduwawala
-              </h1>
+            <Grid item container direction="column" xs={4}>
+              <InView>
+                {({ inView, ref, entry }) => (
+                  <Spring
+                    delay={1000}
+                    config={{ duration: 800 }}
+                    to={{ opacity: inView ? 1 : 0 }}
+                  >
+                    {({ opacity }) => (
+                      <>
+                        <p className="contact-description">Email:</p>
+                        <a
+                          onClick={() =>
+                            (window.location.href =
+                              "mailto:krishan103@hotmail.com")
+                          }
+                          className="contact-link"
+                        >
+                          krishan103@hotmail.com
+                        </a>
+                        <p className="contact-description">Social:</p>
+                        <a className="contact-link">Github</a>
+                        <a className="contact-link">LinkedIn</a>
+                      </>
+                    )}
+                  </Spring>
+                )}
+              </InView>
             </Grid>
           </Grid>
         </Container>
       </Grid>
-    </div>
+    </CustomContainer>
   );
 }

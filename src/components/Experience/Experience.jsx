@@ -75,17 +75,14 @@ function Experience() {
             />
             <SingleExp
               title="Amazon"
-              loc="Seattle, WA"
+              loc="Seattle, WA (Remote)"
               from="May 2020"
               to="August 2020"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat."
+              description="Completed a real-time equipment tracking and monitoring tool of Merch By Amazon warehouses. The tool lets the customer create, update, and delete equipment within the UI, which previously the engineers could only do. Furthermore, the UI features a map of the equipment which allows users to quickly monitor the status of equipment, and find and create equipment by location."
               align="right"
               bullets={[
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed.",
+                "Created ReactJS front-end from the ground up",
+                "Wrote a Java backend that parsed, cleaned, and aggregated equipment data that is served to the front end.",
               ]}
               caption="Software Development Engineer Intern"
               index="04"
