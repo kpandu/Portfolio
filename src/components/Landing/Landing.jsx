@@ -29,8 +29,7 @@ class Landing extends Component {
                 <h1 className="large-header">
                   <LargeHeader>
                     <span>full-stack </span>
-                    <span>software</span>
-                    <span>engineer.</span>
+                    <span>software engineer.</span>
                   </LargeHeader>
                 </h1>
                 <p className="landing-p">
