@@ -12,7 +12,7 @@ function About() {
   return (
     <div id="about">
       <CustomContainer height="70vh" maxWidth="lg">
-        <InView style={{ width: "100%" }} triggerOnce>
+        <InView style={{ width: "100%" }} triggerOnce threshold={0.5}>
           {({ inView, ref, entry }) => (
             <Grid container justify="space-evenly" spacing={4}>
               <Grid
@@ -49,6 +49,7 @@ function About() {
                     opacity: inView ? 1 : 0,
                     greyscaleVal: inView ? 0 : 1,
                   }}
+                  delay={500}
                 >
                   {(props) => (
                     <div

@@ -65,7 +65,7 @@ export default [
   {
     title: "V3 Midnight",
     description:
-      "Built a simple dark themed portfolio that preceded the current site.",
+      "Built a simple dark themed portfolio that preceded the current site. Many things were transfered over to this site.",
     imgs: [
       require("../../../assets/midnight-1.PNG").default,
       require("../../../assets/midnight-2.PNG").default,
