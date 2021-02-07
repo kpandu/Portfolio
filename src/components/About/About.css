@@ -36,7 +36,7 @@
 
 .about-parallax {
   /* The image used */
-  background-image: url("../../assets/setup.jpeg");
+  background-image: url("../../assets/setup.jpg");
   /* Set a specific height */
   height: 45vh;
   max-height: 600px;
