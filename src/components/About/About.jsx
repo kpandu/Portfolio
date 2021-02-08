@@ -32,7 +32,9 @@ function About() {
                     learned a lot about the software development lifecycle and
                     am excited to apply many skills at my job at Amazon as a
                     SWE. A couple side interests include playing the piano and
-                    building computers (audiophile coming soon).
+                    building computers. In this iteration, the site is deployed
+                    through AWS CodePipeline which builds and serves the site
+                    through CloudFront.
                   </Paragraph>
                 </p>
               </Grid>
