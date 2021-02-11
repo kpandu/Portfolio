@@ -4,7 +4,7 @@ import InView from "react-intersection-observer";
 import { Spring } from "react-spring/renderprops";
 import "./Paragraph.css";
 
-function FadeInView({ children, duration, fadeOptions, ...props }) {
+function FadeInView({ children, duration, fadeOptions, className, ...props }) {
   const [inView, setInView] = useState(false);
   return (
     <InView
@@ -22,7 +22,11 @@ function FadeInView({ children, duration, fadeOptions, ...props }) {
         config={{ duration: 1000, easing: easeQuadInOut }}
         {...fadeOptions}
       >
-        {(props) => <div style={props}>{children}</div>}
+        {(props) => (
+          <div style={props} className={className}>
+            {children}
+          </div>
+        )}
       </Spring>
     </InView>
   );

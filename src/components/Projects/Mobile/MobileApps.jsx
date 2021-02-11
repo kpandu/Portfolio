@@ -1,5 +1,6 @@
 import { Grid } from "@material-ui/core";
 import React, { Component } from "react";
+import FadeInView from "../../Shared/FadeInView";
 import FullMobileCard from "./FullMobileCard";
 import "./MobileApps.css";
 import TwoHalfProjectCard from "./TwoHalfProjectCard";
@@ -61,22 +62,28 @@ export default class MobileApps extends Component {
               className="mobile-apps-storyboard-container"
             >
               <Grid item md={4} sm={6} xs={12}>
-                <img
-                  src={require("../../../assets/story-login.png").default}
-                  className="mobile-apps-storyboard-img1"
-                />
+                <FadeInView>
+                  <img
+                    src={require("../../../assets/story-login.png").default}
+                    className="mobile-apps-storyboard-img1"
+                  />
+                </FadeInView>
               </Grid>
               <Grid item md={4} sm={6} xs={12}>
-                <img
-                  src={require("../../../assets/story-home.png").default}
-                  className="mobile-apps-storyboard-img2"
-                />
+                <FadeInView>
+                  <img
+                    src={require("../../../assets/story-home.png").default}
+                    className="mobile-apps-storyboard-img2"
+                  />
+                </FadeInView>
               </Grid>
               <Grid item md={4} sm={6} xs={12}>
-                <img
-                  src={require("../../../assets/story-post.png").default}
-                  className="mobile-apps-storyboard-img3"
-                />
+                <FadeInView>
+                  <img
+                    src={require("../../../assets/story-post.png").default}
+                    className="mobile-apps-storyboard-img3"
+                  />
+                </FadeInView>
               </Grid>
             </Grid>
           }

@@ -3,6 +3,7 @@
   border: 15px solid black;
   width: 25vw;
   max-width: 300px;
+  min-width: 300px;
 }
 
 .mobile-apps-phone-2 {
@@ -11,6 +12,7 @@
   max-width: max(25vw, 300px);
   width: 25vw;
   max-width: 300px;
+  min-width: 300px;
 }
 
 .mobile-apps-r1-c1 {
