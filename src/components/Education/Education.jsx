@@ -3,6 +3,7 @@ import React from "react";
 import CustomContainer from "../Shared/CustomContainer";
 import LargeHeader from "../Shared/LargeHeader";
 import Paragraph from "../Shared/Paragraph";
+import Courses from "./Courses";
 import "./Education.css";
 
 function Education() {
@@ -32,7 +33,7 @@ function Education() {
               </Paragraph>
             </Grid>
           </Grid>
-          <Grid container item xs={12} className="education-card">
+          <Grid container item xs={12}>
             <Grid item xs={12} sm={6}></Grid>
             <Grid item className="education-text-inner" xs={12} sm={6}>
               <Paragraph>
@@ -47,6 +48,7 @@ function Education() {
           </Grid>
         </Grid>
       </CustomContainer>
+      <Courses />
     </div>
   );
 }

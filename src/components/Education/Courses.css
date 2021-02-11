@@ -1,0 +1,13 @@
+.courses {
+  margin-bottom: 10vh;
+}
+
+.courses-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(49, 49, 49);
+}
+
+.courses-p {
+  color: rgb(121, 121, 121);
+}

@@ -2,6 +2,7 @@ import { easePolyOut } from "d3-ease";
 import React, { useState } from "react";
 import InView from "react-intersection-observer";
 import { useTrail, a } from "react-spring";
+import FadeInView from "./FadeInView";
 import "./LargeHeader.css";
 
 function LargeHeader({ children, ...props }) {
@@ -16,7 +17,13 @@ function LargeHeader({ children, ...props }) {
   });
   return (
     <div className="large-header-main" {...props}>
-      <InView as="div" onChange={(e) => setInView(e)} threshold={1} triggerOnce>
+      <InView
+        as="div"
+        onChange={(e) => setInView(e)}
+        threshold={1}
+        triggerOnce
+        className="large-header-inner-desktop"
+      >
         {trail.map(({ y, height, ...rest }, index) => (
           <a.div
             key={items[index].props.children}
@@ -30,6 +37,7 @@ function LargeHeader({ children, ...props }) {
           </a.div>
         ))}
       </InView>
+      <FadeInView className=" large-header-inner-mobile">{children}</FadeInView>
     </div>
   );
 }
