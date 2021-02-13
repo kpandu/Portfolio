@@ -31,6 +31,22 @@
   z-index: 2;
 }
 
+.single-exp-caption-div {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  text-align: start;
+  line-height: 30px;
+  color: #909090;
+  z-index: 2;
+}
+
+.single-exp-caption-line {
+  border: 1px solid #252525;
+  width: 50%;
+  margin: 0 auto;
+}
+
 .single-exp-paragraph {
   font-style: normal;
   font-weight: 400;
@@ -38,6 +54,7 @@
   line-height: 33px;
   text-align: justify;
   color: #adadad;
+  width: 100%;
 }
 
 .single-exp-bullets {
@@ -64,6 +81,7 @@
   opacity: 0.3;
   z-index: 0;
   padding-left: 24px;
+  overflow: hidden;
 }
 
 .exp-container {
@@ -78,6 +96,7 @@
 .single-exp-body {
   height: 100%;
   padding: 50px 0;
+  width: 100%;
 }
 
 .single-exp-hex {
@@ -87,12 +106,6 @@
   border-radius: 5px;
   display: inline;
   margin-right: 24px;
-}
-
-.single-exp-caption-div {
-  border: 1px solid #252525;
-  width: 50%;
-  margin: 0 auto;
 }
 
 .single-exp-caption-binary {

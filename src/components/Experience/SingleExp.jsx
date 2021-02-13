@@ -1,6 +1,6 @@
 import { Grid } from "@material-ui/core";
 import { easeQuadInOut } from "d3-ease";
-import React, { Component, Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import InView from "react-intersection-observer";
 import { Spring } from "react-spring/renderprops";
 
@@ -13,6 +13,7 @@ function SingleExp({
   loc,
   description,
   bullets,
+  caption,
 }) {
   const [inView, setInView] = useState(false);
 
@@ -27,10 +28,14 @@ function SingleExp({
       >
         <Spring
           from={{ opacity: 0, y: 100 }}
-          to={inView ? { opacity: 1, y: 0 } : {}}
-          config={{ duration: 1000, easing: easeQuadInOut }}
+          to={
+            inView
+              ? { opacity: 1, y: 0, hrWidth: "50%", indexHeight: "100%" }
+              : { hrWidth: "0%", indexHeight: "0%" }
+          }
+          config={{ duration: 900, easing: easeQuadInOut }}
         >
-          {({ opacity, y }) => (
+          {({ opacity, y, hrWidth, indexHeight }) => (
             <div style={{ opacity, transform: `translate3d(0,${y}px,0)` }}>
               <Grid container xs={12} alignItems="center">
                 <div className="single-exp-hex" />
@@ -39,8 +44,11 @@ function SingleExp({
                   {" - "}
                   <br />
                   {to}
-                </h1>{" "}
-                <div className="single-exp-caption-div" />
+                </h1>
+                <div
+                  style={{ width: hrWidth }}
+                  className="single-exp-caption-line"
+                />
                 <span className="single-exp-caption-binary">{binary}</span>
               </Grid>
               <Grid
@@ -59,9 +67,16 @@ function SingleExp({
                   direction="column"
                   justify="center"
                 >
-                  <p className="single-exp-index">{index}</p>
+                  <p
+                    className="single-exp-index"
+                    style={{ height: indexHeight }}
+                  >
+                    {index}
+                  </p>
                   <h1 className="single-exp-title">{title}</h1>
                   <br />
+
+                  <div className="single-exp-caption-div">{caption}</div>
                   <h1 className="single-exp-loc">{loc}</h1>
                 </Grid>
                 <Grid container xs={12} md={6} justify="space-between">

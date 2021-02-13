@@ -88,6 +88,18 @@ function Experience() {
               index="04"
               binary="0100"
             />
+            <SingleExp
+              title="Amazon"
+              loc="Seattle, WA (Remote until June)"
+              from="February 2020"
+              to="Present"
+              description="Currently, working as a full stack developer on the MerchFT team."
+              align="right"
+              bullets={[]}
+              caption="Software Development Engineer"
+              index="05"
+              binary="0101"
+            />
           </Grid>
         </div>
       </CustomContainer>
