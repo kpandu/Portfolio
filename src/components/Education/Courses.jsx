@@ -17,7 +17,7 @@ const COURSES = [
 const FADE_DELAY = 200;
 function Courses() {
   return (
-    <CustomContainer maxWidth="md">
+    <CustomContainer maxWidth="md" height="60vh" className="courses">
       <Grid
         container
         justify="space-between"
@@ -56,7 +56,7 @@ function Courses() {
           >
             <FadeInView
               fadeOptions={{
-                delay: i * 200 + (COURSES.length / 2) * FADE_DELAY,
+                delay: i * 200 + (COURSES.length / 2 - 1) * FADE_DELAY,
               }}
             >
               <p className="courses-p">{c}</p>

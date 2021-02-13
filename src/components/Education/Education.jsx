@@ -33,7 +33,7 @@ function Education() {
               </Paragraph>
             </Grid>
           </Grid>
-          <Grid container item xs={12} className="education-card">
+          <Grid container item xs={12}>
             <Grid item xs={12} sm={6}></Grid>
             <Grid item className="education-text-inner" xs={12} sm={6}>
               <Paragraph>
