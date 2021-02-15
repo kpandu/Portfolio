@@ -2,6 +2,7 @@
   max-height: 45vh;
   z-index: 1;
   max-width: 100%;
+  min-height: 300px;
 }
 
 .large-proj-card-number {
@@ -39,4 +40,8 @@
 .large-proj-card-page-active {
   font-weight: 600;
   color: rgb(51, 51, 51);
+}
+
+.large-proj-card-img-container {
+  width: 100%;
 }
