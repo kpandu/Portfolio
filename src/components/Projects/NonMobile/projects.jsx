@@ -33,7 +33,10 @@ export default [
     title: "Panorama Stitcher",
     description:
       "Using RANSAC on the potential candidates from Harris corner detection, the best matches are found between the 2 images to be stitched. Then the transformation between the 2 images is computed which is used to transform and stich all pixels from the left image to the right image.",
-    imgs: [require("../../../assets/panorama.png").default],
+    imgs: [
+      require("../../../assets/panorama.png").default,
+      require("../../../assets/panorama-2.png").default,
+    ],
     tags: ["Python", "numpy"],
   },
   {
@@ -56,8 +59,8 @@ export default [
       "I was really interested in parallax and wanted to learn React, therefore I combined the 2 into the site above. It built a strong foundation in states and functional/class components. The site features a parallax downfall from space to the bottom of the sea.",
     imgs: [
       require("../../../assets/sol2-1.PNG").default,
-      require("../../../assets/sol2-3.PNG").default,
       require("../../../assets/sol2-4.PNG").default,
+      require("../../../assets/sol2-3.PNG").default,
     ],
     tags: ["JS", "ReactJS"],
   },
