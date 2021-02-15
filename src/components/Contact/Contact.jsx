@@ -81,8 +81,18 @@ export default function Contact() {
                           krishan103@hotmail.com
                         </a>
                         <p className="contact-description">Social:</p>
-                        <a className="contact-link">Github</a>
-                        <a className="contact-link">LinkedIn</a>
+                        <a
+                          className="contact-link"
+                          href="https://github.com/kpandu?tab=repositories"
+                        >
+                          Github
+                        </a>
+                        <a
+                          className="contact-link"
+                          href="https://www.linkedin.com/in/krishan-panduwawala-ba9749185/"
+                        >
+                          LinkedIn
+                        </a>
                       </>
                     )}
                   </Spring>
