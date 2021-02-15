@@ -97,10 +97,13 @@ function LargeProjectCard({
                     autoPlay
                     preload="auto"
                     loop
+                    controls
                     type="video/mp4"
                   />
                 ) : (
-                  <img src={imgs[imgIndex]} className="large-proj-card-img" />
+                  <div className="large-proj-card-img-container">
+                    <img src={imgs[imgIndex]} className="large-proj-card-img" />
+                  </div>
                 )}
                 {imgs.length > 1 &&
                   [...Array(imgs.length).keys()].map((idx) => (
