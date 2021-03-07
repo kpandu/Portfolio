@@ -100,7 +100,7 @@ class Landing extends Component {
                   <EmailIcon
                     style={{ fontSize: 40.5, margin: 0 }}
                     onClick={() =>
-                      (window.location.href = "mailto:krishan103@hotmail.com")
+                      (window.location.href = "mailto:krishanpand@gmail.com")
                     }
                   ></EmailIcon>
                 </Fade>

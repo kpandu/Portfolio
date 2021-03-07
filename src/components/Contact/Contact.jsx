@@ -74,7 +74,7 @@ export default function Contact() {
                         <a
                           onClick={() =>
                             (window.location.href =
-                              "mailto:krishan103@hotmail.com")
+                              "mailto:krishanpand@gmail.com")
                           }
                           className="contact-link"
                         >
